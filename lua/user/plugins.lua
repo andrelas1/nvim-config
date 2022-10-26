@@ -74,6 +74,9 @@ use("williamboman/mason.nvim")            -- simple to use language server insta
 use("williamboman/mason-lspconfig.nvim")  -- simple to use language server installer
 use("jose-elias-alvarez/null-ls.nvim")    -- utility to be able to use things from the LSP
 
+-- Telescope
+use("nvim-telescope/telescope.nvim")      -- Telescope
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
