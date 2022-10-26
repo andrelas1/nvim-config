@@ -78,6 +78,8 @@ use("jose-elias-alvarez/null-ls.nvim")    -- utility to be able to use things fr
 use("nvim-telescope/telescope.nvim")      -- Telescope
 
 use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}) -- Treesitter
+use("p00f/nvim-ts-rainbow")                                 -- Adds different colors for nested parenthesis
+use("nvim-treesitter/playground")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
