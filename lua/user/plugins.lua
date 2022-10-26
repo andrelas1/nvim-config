@@ -77,6 +77,8 @@ use("jose-elias-alvarez/null-ls.nvim")    -- utility to be able to use things fr
 -- Telescope
 use("nvim-telescope/telescope.nvim")      -- Telescope
 
+use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}) -- Treesitter
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
