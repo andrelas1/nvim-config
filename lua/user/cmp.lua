@@ -101,6 +101,7 @@ cmp.setup {
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
+        nvim_lua = "[NVIM_Lua]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
@@ -108,9 +109,11 @@ cmp.setup {
       return vim_item
     end,
   },
+  -- these sources are the origin of the completion data. So basically the code complete will show the autocomplete code of the LSP first, then luasnip, etc...
   sources = {
-    { name = "luasnip" },
+    { name = "nvim_lsp" },
     { name = "nvim_lua" },
+    { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
   },

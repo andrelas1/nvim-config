@@ -54,18 +54,25 @@ use({
   run = 'npm install --frozen-lockfile --production',
   ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'}
 })        -- Prettier for JS projects
-use("lunarvim/colorschemes")         -- LunarVim colorscheme
-use("folke/tokyonight.nvim")         -- tokyonight colorscheme
+use("lunarvim/colorschemes")            -- LunarVim colorscheme
+use("folke/tokyonight.nvim")            -- tokyonight colorscheme
 
-use("hrsh7th/nvim-cmp")              -- code completion
-use("hrsh7th/cmp-buffer")            -- buffer completion
-use("hrsh7th/cmp-path")              -- path completion
-use("hrsh7th/cmp-cmdline")           -- cmdline completion
-use("hrsh7th/cmp-nvim-lua")           -- vim api completion 
+use("hrsh7th/nvim-cmp")                 -- code completion
+use("hrsh7th/cmp-buffer")               -- buffer completion
+use("hrsh7th/cmp-path")                 -- path completion
+use("hrsh7th/cmp-cmdline")              -- cmdline completion
+use("hrsh7th/cmp-nvim-lua")             -- vim api completion 
+use("hrsh7th/cmp-nvim-lsp")             -- completion with nvim lsp
 
 
-use("saadparwaiz1/cmp_luasnip")      -- snippet completion for nvim-cmp
-use("L3MON4D3/LuaSnip")              -- snippet engine for nvim-cmp
+use("saadparwaiz1/cmp_luasnip")         -- snippet completion for nvim-cmp
+use("L3MON4D3/LuaSnip")                 -- snippet engine for nvim-cmp
+
+use("neovim/nvim-lspconfig")              -- enable LSP
+-- use("williamboman/nvim-lsp-installer")  -- simple to use language server installer
+use("williamboman/mason.nvim")            -- simple to use language server installer
+use("williamboman/mason-lspconfig.nvim")  -- simple to use language server installer
+use("jose-elias-alvarez/null-ls.nvim")    -- utility to be able to use things from the LSP
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
