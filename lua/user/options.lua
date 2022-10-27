@@ -40,7 +40,7 @@ vim.opt.wrap =  false                           -- display lines as one long lin
 -- vim.opt.whichwrap:append("<,>,[,],h,l")
 -- vim.opt.iskeyword:append("-")
 --
-vim.opt.foldmethod = "indent"                   -- folding method
+-- vim.opt.foldmethod = "indent"                   -- folding method
 
 -- Plugin options
 vim.api.nvim_set_var("prettier#autoformat", 1)
