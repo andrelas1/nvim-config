@@ -67,6 +67,8 @@ use("windwp/nvim-autopairs")            -- Autopairs
 use("lewis6991/gitsigns.nvim")          -- Gitsigns
 use("kyazdani42/nvim-web-devicons")     -- Nvim Tree Explorer
 use("kyazdani42/nvim-tree.lua")         -- Nvim Tree Explorer
+use("akinsho/bufferline.nvim")               -- Bufferline
+use("moll/vim-bbye")                    -- Delete a buffer that does not exit neovim. Useful with many windows/tabs
 
 
 
