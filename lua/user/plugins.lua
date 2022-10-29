@@ -65,6 +65,8 @@ use("hrsh7th/cmp-nvim-lua")             -- vim api completion
 use("hrsh7th/cmp-nvim-lsp")             -- completion with nvim lsp
 use("windwp/nvim-autopairs")            -- Autopairs
 use("lewis6991/gitsigns.nvim")          -- Gitsigns
+use("kyazdani42/nvim-web-devicons")     -- Nvim Tree Explorer
+use("kyazdani42/nvim-tree.lua")         -- Nvim Tree Explorer
 
 
 

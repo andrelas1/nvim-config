@@ -70,3 +70,4 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Explorer
 keymap("n", "<leader>pv", "<cmd>Ex<CR>", opts)
+keymap("n", "<leader>pt", "<cmd>NvimTreeToggle<CR>", opts)
