@@ -63,6 +63,9 @@ use("hrsh7th/cmp-path")                 -- path completion
 use("hrsh7th/cmp-cmdline")              -- cmdline completion
 use("hrsh7th/cmp-nvim-lua")             -- vim api completion 
 use("hrsh7th/cmp-nvim-lsp")             -- completion with nvim lsp
+use("windwp/nvim-autopairs")            -- Autopairs
+use("lewis6991/gitsigns.nvim")          -- Gitsigns
+
 
 
 use("saadparwaiz1/cmp_luasnip")         -- snippet completion for nvim-cmp
@@ -76,10 +79,13 @@ use("jose-elias-alvarez/null-ls.nvim")    -- utility to be able to use things fr
 
 -- Telescope
 use("nvim-telescope/telescope.nvim")      -- Telescope
+use ({'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }) -- Telescope's faster fuzzy finder in C
 
+-- Treesitter
 use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}) -- Treesitter
 use("p00f/nvim-ts-rainbow")                                 -- Adds different colors for nested parenthesis
 use("nvim-treesitter/playground")
+
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
