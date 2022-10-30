@@ -68,6 +68,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ preview = true }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>b", "<cmd>Telescope buffers<CR>", opts)
+keymap("n", "<leader>m", "<cmd>Telescope marks<CR>", opts)
 
 -- Explorer
 keymap("n", "<leader>pv", "<cmd>Ex<CR>", opts)
