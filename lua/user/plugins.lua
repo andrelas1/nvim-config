@@ -90,6 +90,12 @@ use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}) -- Treesitter
 use("p00f/nvim-ts-rainbow")                                 -- Adds different colors for nested parenthesis
 use("nvim-treesitter/playground")
 
+-- Status line
+-- use("nvim-lua/lsp-status.nvim")                             -- Adds a status bar on the bottom line to give LSP info about the current file
+use({"nvim-lualine/lualine.nvim",
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  })                            -- Adde a status bar on the bottom line to gite LSP and git info about the current file
+
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
