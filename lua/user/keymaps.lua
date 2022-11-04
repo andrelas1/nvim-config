@@ -66,10 +66,14 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Telescope
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ preview = true }))<cr>", opts)
-keymap("n", "<leader>t", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<C-f>", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>tb", "<cmd>Telescope buffers<CR>", opts)
 keymap("n", "<leader>tm", "<cmd>Telescope marks<CR>", opts)
 
 -- Explorer
 keymap("n", "<leader>pv", "<cmd>Ex<CR>", opts)
 keymap("n", "<leader>pt", "<cmd>NvimTreeToggle<CR>", opts)
+
+
+-- LSP
+keymap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
