@@ -3,7 +3,9 @@ local servers = {
 	"sumneko_lua",
 	"jsonls",
   "tsserver",
-  "html"
+  "html",
+  "gopls",
+  "jdtls"
 }
 
 local settings = {
