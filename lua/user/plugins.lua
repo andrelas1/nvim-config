@@ -47,7 +47,6 @@ return packer.startup(function(use)
   use("wbthomason/packer.nvim") -- Have packer manage itself
   use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
   use("tpope/vim-commentary") -- Add commentaries with gc
-  use("github/copilot.vim") -- Github copilot
   use({ "gruvbox-community/gruvbox", alias = 'gruvbox' }) -- gruvbox theme
   use({
     "prettier/vim-prettier",
