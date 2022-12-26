@@ -26,11 +26,14 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
-keymap("n", "<leaber>w", "<C-w>v", opts)
+keymap("n", "<leader>w", "<C-w>v", opts)
 
--- Navigate buffers
+-- Handle buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<leader>bd", ":bufdo :Bdelete <CR><C-o>", opts)
+keymap("n", "<leader>o", ":e#<CR>", opts)
+
 
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
@@ -43,7 +46,12 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
+-- Navigate hozirontally
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)
+
 -- Visual --
+
 -- Stay in indent mode -- 
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
@@ -52,8 +60,6 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts) -- when yanking a word to another word, nvim keeps the pasted word in the clipboard 
-
-
 
 
 -- Visual Block --
