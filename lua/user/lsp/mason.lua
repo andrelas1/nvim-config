@@ -5,7 +5,8 @@ local servers = {
   "tsserver",
   "html",
   "gopls",
-  "jdtls"
+  "jdtls",
+  "kotlin_language_server"
 }
 
 local settings = {

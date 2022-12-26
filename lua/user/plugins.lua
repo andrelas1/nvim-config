@@ -79,6 +79,7 @@ return packer.startup(function(use)
 
   use("saadparwaiz1/cmp_luasnip") -- snippet completion for nvim-cmp
   use("L3MON4D3/LuaSnip") -- snippet engine for nvim-cmp
+  use("udalov/kotlin-vim") -- language support for kotlin
 
   use("neovim/nvim-lspconfig") -- enable LSP
   -- use("williamboman/nvim-lsp-installer")  -- simple to use language server installer
