@@ -6,7 +6,9 @@ local servers = {
   "html",
   "gopls",
   "jdtls",
-  "kotlin_language_server"
+  "kotlin_language_server",
+  -- apparently the dart language server takes a while to load, which results in an error message that quickly disappears
+  "dartls"
 }
 
 local settings = {
