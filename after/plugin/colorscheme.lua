@@ -1,5 +1,3 @@
-local kanagawa = require("kanagawa")
-
 vim.cmd "colorscheme koehler"
 
 -- local colorscheme = "tokyonight-night" -- ideal to set a custom colorscheme and not a default one
