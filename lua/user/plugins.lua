@@ -55,6 +55,7 @@ return packer.startup(function(use)
       'html' }
   }) -- Prettier for JS projects
   use("lunarvim/colorschemes") -- LunarVim colorscheme
+  use("rebelot/kanagawa.nvim") -- kanagawa colorscheme
   use("folke/tokyonight.nvim") -- tokyonight colorscheme
   use({
     'rose-pine/neovim',
