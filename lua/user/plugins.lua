@@ -73,7 +73,6 @@ return packer.startup(function(use)
   use("kyazdani42/nvim-web-devicons") -- Nvim Tree Explorer
   use("kyazdani42/nvim-tree.lua") -- Nvim Tree Explorer
   use("akinsho/bufferline.nvim") -- Bufferline
-  use("moll/vim-bbye") -- Delete a buffer that does not exit neovim. Useful with many windows/tabs
 
 
 
