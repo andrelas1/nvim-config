@@ -75,6 +75,9 @@ return packer.startup(function(use)
   use("akinsho/bufferline.nvim") -- Bufferline
 
 
+  use('mfussenegger/nvim-dap') -- Debugger Adapter Protocol (installing this for Java)
+  use('mfussenegger/nvim-jdtls') -- NVIM client for the Java LSP
+
 
   use("saadparwaiz1/cmp_luasnip") -- snippet completion for nvim-cmp
   use("L3MON4D3/LuaSnip") -- snippet engine for nvim-cmp
