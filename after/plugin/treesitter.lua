@@ -14,10 +14,4 @@ configs.setup {
 
   },
   indent = { enable = true, disable = { "yaml" } },
-  rainbow = {
-    -- disable = {},
-    enable = true,
-    extended_mode = true,
-    max_file_lines = nil
-  }
 }

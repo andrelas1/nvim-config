@@ -92,7 +92,6 @@ return packer.startup(function(use)
 
   -- Treesitter
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- Treesitter
-  use("p00f/nvim-ts-rainbow") -- Adds different colors for nested parenthesis
   use("nvim-treesitter/playground")
 
   -- Status line
