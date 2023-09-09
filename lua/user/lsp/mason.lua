@@ -5,6 +5,7 @@ local servers = {
   "html",
   "gopls",
   "kotlin_language_server",
+  "lua_ls"
 }
 
 local settings = {
