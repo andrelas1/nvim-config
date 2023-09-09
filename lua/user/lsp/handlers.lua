@@ -89,7 +89,7 @@ end
 -- To autoformat on save
 local function configure_formatters()
   vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-    pattern = { "*.lua" },
+    pattern = { "*.lua", "*.go" },
     callback = function()
       vim.lsp.buf.format()
     end,
