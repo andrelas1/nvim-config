@@ -83,8 +83,10 @@ return packer.startup(function(use)
   use("L3MON4D3/LuaSnip") -- snippet engine for nvim-cmp
   use("udalov/kotlin-vim") -- language support for kotlin
 
+
+  use('simrat39/rust-tools.nvim') -- Improves the Rust experience
+
   use("neovim/nvim-lspconfig") -- enable LSP
-  -- use("williamboman/nvim-lsp-installer")  -- simple to use language server installer
   use("williamboman/mason.nvim") -- simple to use language server installer
   use("williamboman/mason-lspconfig.nvim") -- simple to use language server installer
   use("jose-elias-alvarez/null-ls.nvim") -- utility to be able to use things from the LSP
