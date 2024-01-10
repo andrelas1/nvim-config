@@ -39,61 +39,70 @@ end
 -- 	},
 -- })
 
-
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
 
-  use("wbthomason/packer.nvim") -- Have packer manage itself
-  use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
-  use("tpope/vim-commentary") -- Add commentaries with gc
-  use({ "gruvbox-community/gruvbox", alias = 'gruvbox' }) -- gruvbox theme
+  use("wbthomason/packer.nvim")                          -- Have packer manage itself
+  use("nvim-lua/plenary.nvim")                           -- Useful lua functions used by lots of plugins
+  use("tpope/vim-commentary")                            -- Add commentaries with gc
+  use({ "gruvbox-community/gruvbox", alias = "gruvbox" }) -- gruvbox theme
   use({
     "prettier/vim-prettier",
-    run = 'npm install --frozen-lockfile --production',
-    ft = { 'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml',
-      'html' }
-  }) -- Prettier for JS projects
+    run = "npm install --frozen-lockfile --production",
+    ft = {
+      "javascript",
+      "typescript",
+      "css",
+      "less",
+      "scss",
+      "json",
+      "graphql",
+      "markdown",
+      "vue",
+      "svelte",
+      "yaml",
+      "html",
+    },
+  })                          -- Prettier for JS projects
   use("lunarvim/colorschemes") -- LunarVim colorscheme
   use("rebelot/kanagawa.nvim") -- kanagawa colorscheme
   use("folke/tokyonight.nvim") -- tokyonight colorscheme
   use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
+    "rose-pine/neovim",
+    as = "rose-pine",
   })
 
-  use("hrsh7th/nvim-cmp") -- code completion
-  use("hrsh7th/cmp-buffer") -- buffer completion
-  use("hrsh7th/cmp-path") -- path completion
-  use("hrsh7th/cmp-cmdline") -- cmdline completion
-  use("hrsh7th/cmp-nvim-lua") -- vim api completion
-  use("hrsh7th/cmp-nvim-lsp") -- completion with nvim lsp
-  use("windwp/nvim-autopairs") -- Autopairs
-  use("lewis6991/gitsigns.nvim") -- Gitsigns
-  use("kyazdani42/nvim-web-devicons") -- Nvim Tree Explorer
-  use("kyazdani42/nvim-tree.lua") -- Nvim Tree Explorer
-  use("akinsho/bufferline.nvim") -- Bufferline
+  use("hrsh7th/nvim-cmp")                                                                      -- code completion
+  use("hrsh7th/cmp-buffer")                                                                    -- buffer completion
+  use("hrsh7th/cmp-path")                                                                      -- path completion
+  use("hrsh7th/cmp-cmdline")                                                                   -- cmdline completion
+  use("hrsh7th/cmp-nvim-lua")                                                                  -- vim api completion
+  use("hrsh7th/cmp-nvim-lsp")                                                                  -- completion with nvim lsp
+  use("windwp/nvim-autopairs")                                                                 -- Autopairs
+  use("lewis6991/gitsigns.nvim")                                                               -- Gitsigns
+  use("kyazdani42/nvim-web-devicons")                                                          -- Nvim Tree Explorer
+  use("kyazdani42/nvim-tree.lua")                                                              -- Nvim Tree Explorer
+  use("akinsho/bufferline.nvim")                                                               -- Bufferline
 
+  use("mfussenegger/nvim-dap")                                                                 -- Debugger Adapter Protocol (installing this for Java)
+  use("mfussenegger/nvim-jdtls")                                                               -- NVIM client for the Java LSP
+  use({ "mrcjkb/haskell-tools.nvim", ft = { "haskell", "lhaskell", "cabal", "cabalproject" } }) -- Haskell LSP support
 
-  use('mfussenegger/nvim-dap') -- Debugger Adapter Protocol (installing this for Java)
-  use('mfussenegger/nvim-jdtls') -- NVIM client for the Java LSP
+  use("saadparwaiz1/cmp_luasnip")                                                              -- snippet completion for nvim-cmp
+  use("L3MON4D3/LuaSnip")                                                                      -- snippet engine for nvim-cmp
+  use("udalov/kotlin-vim")                                                                     -- language support for kotlin
 
+  use("simrat39/rust-tools.nvim")                                                              -- Improves the Rust experience
 
-  use("saadparwaiz1/cmp_luasnip") -- snippet completion for nvim-cmp
-  use("L3MON4D3/LuaSnip") -- snippet engine for nvim-cmp
-  use("udalov/kotlin-vim") -- language support for kotlin
-
-
-  use('simrat39/rust-tools.nvim') -- Improves the Rust experience
-
-  use("neovim/nvim-lspconfig") -- enable LSP
-  use("williamboman/mason.nvim") -- simple to use language server installer
-  use("williamboman/mason-lspconfig.nvim") -- simple to use language server installer
-  use("jose-elias-alvarez/null-ls.nvim") -- utility to be able to use things from the LSP
+  use("neovim/nvim-lspconfig")                                                                 -- enable LSP
+  use("williamboman/mason.nvim")                                                               -- simple to use language server installer
+  use("williamboman/mason-lspconfig.nvim")                                                     -- simple to use language server installer
+  use("jose-elias-alvarez/null-ls.nvim")                                                       -- utility to be able to use things from the LSP
 
   -- Telescope
-  use("nvim-telescope/telescope.nvim") -- Telescope
-  use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }) -- Telescope's faster fuzzy finder in C
+  use("nvim-telescope/telescope.nvim")                             -- Telescope
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- Telescope's faster fuzzy finder in C
 
   -- Treesitter
   use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- Treesitter
@@ -101,10 +110,7 @@ return packer.startup(function(use)
 
   -- Status line
   -- use("nvim-lua/lsp-status.nvim")                             -- Adds a status bar on the bottom line to give LSP info about the current file
-  use({ "nvim-lualine/lualine.nvim",
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }) -- Adde a status bar on the bottom line to gite LSP and git info about the current file
-
+  use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } }) -- Adde a status bar on the bottom line to gite LSP and git info about the current file
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
